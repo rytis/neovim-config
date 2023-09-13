@@ -17,3 +17,12 @@
 - `plugins.lua` installs Lazy package manager, and installs and loads other plugins.
 - `plugins/*.lua` deals with individual plugin configuration.
 
+# Plugins
+
+## ToggleTerm
+
+Open/Close with `Ctrl-\`
+
+## NvimTree
+
+Configured to open on NVIM start.
