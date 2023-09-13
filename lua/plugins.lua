@@ -54,5 +54,10 @@ require("lazy").setup({
             -- or leave it empty to use the default settings
             -- refer to the configuration section below
         }
+    },
+    {
+        'akinsho/toggleterm.nvim', 
+        version = "*", 
+        config = true
     }
 })

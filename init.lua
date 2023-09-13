@@ -7,4 +7,5 @@ require("keymaps")
 require("plugins")
 require("plugins.lualine")
 require("plugins.nvimtree")
+require("plugins.toggleterm")
 
