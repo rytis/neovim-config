@@ -1,1 +1,19 @@
-# neovim-config
+# Installation
+
+- [Install NeoVim](https://github.com/neovim/neovim/wiki/Installing-Neovim).
+- Install one of patched [Nerd Fonts](https://www.nerdfonts.com/font-downloads). For example Hack Nerd Font.
+    - On Fedora
+        - Unzip to `~/.local/share/fonts/<some-name>/`.
+        - Refresh font cache with `fc-cache -v`. Safely ignore "looped directory" messages.
+        - Restart terminal, select new font in profile.
+- Clone this repo to `~/.config/nvim`. Create if does not exist.
+- Run `nvim`...
+
+# Structure
+
+- `init.lua` disables `netrw` (as we're going to use NvimTree instead) and loads the rest of the configuration from `lua/` directory.
+- `keymaps.lua` deals with keymap configuration.
+- `options.lua` sets various NeoVim options, such as tab spacing, etc.
+- `plugins.lua` installs Lazy package manager, and installs and loads other plugins.
+- `plugins/*.lua` deals with individual plugin configuration.
+
