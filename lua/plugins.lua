@@ -33,7 +33,7 @@ require("lazy").setup({
     --
     -- NIGHTFOX colourscheme
     --
-    { 
+    {
         "EdenEast/nightfox.nvim",
         lazy = false,
         priority = 1000,
@@ -74,8 +74,8 @@ require("lazy").setup({
     -- ToggleTerm terminal
     --
     {
-        'akinsho/toggleterm.nvim', 
-        version = "*", 
+        'akinsho/toggleterm.nvim',
+        version = "*",
         config = true
     },
     --

@@ -33,9 +33,9 @@ Configured to open on NVIM start.
 
 # Notes
 
-- Cycle through windows (and jump to a floating pop up): `^W ^W`
-- PopUp list navigation: `^P` / `^N`
+- Cycle through windows (and jump to a floating pop up): `^w ^w`
+- PopUp list navigation: `^p` / `^n`
 - Spell check
     - Enable `:set spell`
     - Show suggestions: `z=`
-
+- Close autocomplete popup: `^e`
