@@ -16,6 +16,9 @@ vim.opt.rtp:prepend(lazypath)
 -- Load plugins
 
 require("lazy").setup({
+    --
+    -- NVIM TREE file browser
+    --
     {
         "nvim-tree/nvim-tree.lua",
         version = "*",
@@ -27,6 +30,9 @@ require("lazy").setup({
             require("nvim-tree").setup {}
         end,
     },
+    --
+    -- NIGHTFOX colourscheme
+    --
     { 
         "EdenEast/nightfox.nvim",
         lazy = false,
@@ -35,13 +41,22 @@ require("lazy").setup({
             vim.cmd([[colorscheme carbonfox]])
         end,
     },
+    --
+    -- LUALine status line
+    --
     {
         "nvim-lualine/lualine.nvim"
     },
+    --
+    -- Telescope
+    --
     {
         'nvim-telescope/telescope.nvim', branch = '0.1.x',
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
+    --
+    -- WhichKey key mapper
+    --
     {
         "folke/which-key.nvim",
         event = "VeryLazy",
@@ -55,9 +70,38 @@ require("lazy").setup({
             -- refer to the configuration section below
         }
     },
+    --
+    -- ToggleTerm terminal
+    --
     {
         'akinsho/toggleterm.nvim', 
         version = "*", 
         config = true
+    },
+    --
+    -- LSPZero LSP configuration
+    --
+    {
+      {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
+
+      --- Uncomment these if you want to manage LSP servers from neovim
+      {'williamboman/mason.nvim'},
+      {'williamboman/mason-lspconfig.nvim'},
+
+      -- LSP Support
+      {
+        'neovim/nvim-lspconfig',
+        dependencies = {
+          {'hrsh7th/cmp-nvim-lsp'},
+        },
+      },
+
+      -- Autocompletion
+      {
+        'hrsh7th/nvim-cmp',
+        dependencies = {
+          {'L3MON4D3/LuaSnip'},
+        }
+      }
     }
 })

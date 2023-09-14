@@ -8,4 +8,5 @@ require("plugins")
 require("plugins.lualine")
 require("plugins.nvimtree")
 require("plugins.toggleterm")
+require("plugins.lspzero")
 

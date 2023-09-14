@@ -6,6 +6,8 @@
         - Unzip to `~/.local/share/fonts/<some-name>/`.
         - Refresh font cache with `fc-cache -v`. Safely ignore "looped directory" messages.
         - Restart terminal, select new font in profile.
+- Install other packages
+    - `npm` - needed for some LSP servers (eg `ansiblels`)
 - Clone this repo to `~/.config/nvim`. Create if does not exist.
 - Run `nvim`...
 
@@ -26,3 +28,14 @@ Open/Close with `Ctrl-\`
 ## NvimTree
 
 Configured to open on NVIM start.
+
+## LSPZero
+
+# Notes
+
+- Cycle through windows (and jump to a floating pop up): `^W ^W`
+- PopUp list navigation: `^P` / `^N`
+- Spell check
+    - Enable `:set spell`
+    - Show suggestions: `z=`
+
