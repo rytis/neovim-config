@@ -8,7 +8,7 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  -- Replace the language servers listed here 
+  -- Replace the language servers listed here
   -- with the ones you want to install
   ensure_installed = {
       'terraformls',
@@ -20,3 +20,13 @@ require('mason-lspconfig').setup({
   },
 })
 
+
+-- terraformls configuration
+require('lspconfig').terraformls.setup{}
+vim.api.nvim_create_autocmd({"BufWritePre"}, {
+  pattern = {"*.tf", "*.tfvars"},
+  callback = function()
+    vim.lsp.buf.format()
+  end,
+})
+-- terraformls

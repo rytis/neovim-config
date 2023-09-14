@@ -38,7 +38,8 @@ vim.filetype.add({
 
     pattern = {
         ['.*/ansible/.*yml'] = 'yaml.ansible',
-        ['.*/ansible/.*yaml'] = 'yaml.ansible'
+        ['.*/ansible/.*yaml'] = 'yaml.ansible',
+        ['.*tf'] = 'terraform',
     }
 
 })
