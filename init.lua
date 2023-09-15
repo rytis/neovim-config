@@ -9,4 +9,5 @@ require("plugins.lualine")
 require("plugins.nvimtree")
 require("plugins.toggleterm")
 require("plugins.lspzero")
+require("plugins.buffermanager")
 

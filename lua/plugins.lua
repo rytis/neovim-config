@@ -103,5 +103,12 @@ require("lazy").setup({
           {'L3MON4D3/LuaSnip'},
         }
       }
+    },
+    --
+    -- Buffer manager
+    --
+    {
+      'j-morano/buffer_manager.nvim',
+      dependencies = { 'nvim-lua/plenary.nvim' }
     }
 })
