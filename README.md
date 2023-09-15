@@ -39,3 +39,4 @@ Configured to open on NVIM start.
     - Enable `:set spell`
     - Show suggestions: `z=`
 - Close autocomplete popup: `^e`
+- Buffer management window: 'M-m'
