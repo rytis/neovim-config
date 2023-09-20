@@ -1,3 +1,11 @@
+# Pre-requisites
+
+## MacOS
+
+Install iTerm2. Standard Terminal app doesn't work very well for some reason with NeoVIM.
+
+`brew install --cask iterm2`
+
 # Installation
 
 - [Install NeoVim](https://github.com/neovim/neovim/wiki/Installing-Neovim).
@@ -6,6 +14,9 @@
         - Unzip to `~/.local/share/fonts/<some-name>/`.
         - Refresh font cache with `fc-cache -v`. Safely ignore "looped directory" messages.
         - Restart terminal, select new font in profile.
+    - On MacOS
+        - `brew tap homebrew/cask-fonts`
+        - `brew install --cask font-hack-nerd-font`
 - Install other packages
     - `npm` - needed for some LSP servers (eg `ansiblels`)
 - Clone this repo to `~/.config/nvim`. Create if does not exist.
