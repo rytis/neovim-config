@@ -5,6 +5,7 @@ vim.g.loaded_netrwPlugin = 1
 require("options")
 require("keymaps")
 require("plugins")
+require("plugins.tokyonight")
 require("plugins.lualine")
 require("plugins.nvimtree")
 require("plugins.toggleterm")

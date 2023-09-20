@@ -33,15 +33,21 @@ require("lazy").setup({
     --
     -- NIGHTFOX colourscheme
     --
-    {
-        "EdenEast/nightfox.nvim",
-        lazy = false,
-        priority = 1000,
-        config = function()
-            vim.cmd([[colorscheme carbonfox]])
-        end,
-    },
+    -- {
+    --     "EdenEast/nightfox.nvim",
+    --     lazy = false,
+    --     priority = 1000,
+    --     config = function()
+    --         vim.cmd([[colorscheme carbonfox]])
+    --     end,
+    -- },
     --
+    {
+  "folke/tokyonight.nvim",
+  lazy = false,
+  priority = 1000,
+  opts = {},
+},
     -- LUALine status line
     --
     {
