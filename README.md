@@ -19,6 +19,7 @@ Install iTerm2. Standard Terminal app doesn't work very well for some reason wit
         - `brew install --cask font-hack-nerd-font`
 - Install other packages
     - `npm` - needed for some LSP servers (eg `ansiblels`)
+    - `ripgrep` - needed by `telescope` (`brew install ripgrep`)
 - Clone this repo to `~/.config/nvim`. Create if does not exist.
 - Run `nvim`...
 
@@ -50,4 +51,7 @@ Configured to open on NVIM start.
     - Enable `:set spell`
     - Show suggestions: `z=`
 - Close autocomplete popup: `^e`
-- Buffer management window: 'M-m'
+- Buffer management window: `M-m`
+- Searching (with `telescope`)
+    - Find files in current dir tree `\ff`
+    - Grep in current dir tree `\fg`
