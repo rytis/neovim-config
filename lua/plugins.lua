@@ -42,12 +42,23 @@ require("lazy").setup({
     --     end,
     -- },
     --
+    -- TokyoNight colourscheme
+    --
+    -- {
+    --     "folke/tokyonight.nvim",
+    --     lazy = false,
+    --     priority = 1000,
+    --     opts = {},
+    -- },
+    --
+    -- Kanagawa colourscheme
+    --
     {
-  "folke/tokyonight.nvim",
-  lazy = false,
-  priority = 1000,
-  opts = {},
-},
+        "rebelot/kanagawa.nvim",
+        lazy = false,
+        priority = 1000,
+    },
+    --
     -- LUALine status line
     --
     {
@@ -101,7 +112,6 @@ require("lazy").setup({
           {'hrsh7th/cmp-nvim-lsp'},
         },
       },
-
       -- Autocompletion
       {
         'hrsh7th/nvim-cmp',
