@@ -13,7 +13,8 @@ require('mason-lspconfig').setup({
   ensure_installed = {
       'terraformls',
       'lua_ls',
-      'ansiblels'
+      'ansiblels',
+      'gopls'
   },
   handlers = {
     lsp_zero.default_setup,
